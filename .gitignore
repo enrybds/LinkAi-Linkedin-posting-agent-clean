@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment files
+.env
+.venv/
+
+# Node & JS
+node_modules/
+frontend/node_modules/
+frontend/build/
+*.log
+*.lock
+
+# MacOS
+.DS_Store
+
+# Otros
+*.sqlite3
+*.db
+*.pkl
+*.pickle
+
+# VSCode
+.vscode/
