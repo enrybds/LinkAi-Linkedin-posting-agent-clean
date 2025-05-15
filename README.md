@@ -17,12 +17,14 @@ Create, edit, and publish engaging LinkedIn posts with the power of AI! LinkAi c
 
 ## 🏗️ Architecture Overview
 
-```mermaid
-flowchart TD
-    A[Frontend (React)] -- Axios REST --> B[Backend (FastAPI)]
-    B -- OpenAI API --> C(OpenAI)
-    B -- LinkedIn API --> D(LinkedIn)
-    B -- Reads/Writes --> E[Drafts/Profiles JSON]
+```
+Frontend (React)
+      |
+      v   (REST API via Axios)
+Backend (FastAPI)
+   |        |         |
+   v        v         v
+OpenAI   LinkedIn   Drafts/Profiles (JSON)
 ```
 
 - **Frontend:** Modern, responsive React UI inspired by LinkedIn's design.
